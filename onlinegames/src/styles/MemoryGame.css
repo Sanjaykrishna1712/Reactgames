@@ -1,0 +1,85 @@
+.memory-game-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .scores {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .board1 {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .card {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .card.flipped {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+  }
+  
+  .card.matched {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reset-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  .winner-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+  }
+  .reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .reset-btn a {
+    text-decoration: none;
+    color: white; /* Ensures text color remains white */
+  }
+  .reset-btn:hover {
+    background-color: #0056b3;
+  }
+  
